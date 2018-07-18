@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\BackgroundScroller.cs" />
+    <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Caveman.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/medka/Documents/Chleka/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

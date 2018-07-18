@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Caveman : MonoBehaviour {
-    public float speed =7f;
+    public float speed =10f;
     Rigidbody2D rb2d;
     public float jumpForce = 65f;
 	void Start () {
@@ -22,9 +22,13 @@ public class Caveman : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.RightArrow)&& (speed <= 35)){
             speed += 5;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && (speed >= 7) )
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && (speed > 10) )
         {
-            speed -= 5;
+            if (speed > 6)
+            {
+
+                speed -= 5;
+            }
             
         }
     }
